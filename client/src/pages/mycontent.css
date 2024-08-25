@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+.container-wrapper {
+  width: 100%;
+  display: flex;
+  margin-top: 64px;
+}
+
+.sidebar-wrapper {
+  width: 20%;
+  height: 100vh;
+  position: fixed;
+}
+
+.sidebar-new {
+  width: 100% !important;
+}
+
+.content-wrapper {
+  width: 80%;
+  height: 100%;
+  background: #f5f5f5;
+  position: relative;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  left: 20%;
+}
+
+.containercontent {
+  padding-left: 15px;
+  background: #ffffff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  margin-bottom: 30px;
+}

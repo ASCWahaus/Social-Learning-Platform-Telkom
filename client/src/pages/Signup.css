@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Rancho&display=swap");
+
+.welcome {
+  font-family: "Rancho", cursive;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 35px;
+  line-height: 35px;
+  display: flex;
+  align-items: center;
+  color: #686a71;
+}
+
+.signinlog {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 37.2463px;
+  display: flex;
+  align-items: center;
+  color: #b43737;
+}
+
+.textala {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #686a71;
+}
+
+.labellogin {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20.0486px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #686a71;
+}
+
+.formlogin {
+  width: 492.19px;
+  height: 50.12px;
+  background: #ffffff;
+  border: 1.00243px solid #000000;
+  box-sizing: border-box;
+  border-radius: 8.01943px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20.0486px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #686a71;
+}
+
+.buttonlogin {
+  width: 492px;
+  margin-left: -30px;
+  margin-top: 20px;
+  height: 50.12px;
+  border-style: none;
+  background: #d74040;
+  border-radius: 8.01943px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20.0486px;
+  line-height: 20px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  align-items: center;
+  color: #ffffff;
+}
+
+.texttext {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20.0486px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  color: #1a1c23;
+}
+
+.pwmin8 {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  display: flex;
+  color: #686a71;
+}

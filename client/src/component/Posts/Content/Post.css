@@ -1,0 +1,512 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Rancho&display=swap");
+
+.modal-window2xx {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s;
+}
+.modal-window2xx:target {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.modal-window2xx > div {
+  width: 850px;
+  height: 95%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  /* margin-top: 1%; */
+  margin-bottom: 5%;
+
+  transform: translate(-50%, -50%);
+  padding: 2em;
+  background: white;
+  /* overflow: auto;
+  white-space: nowrap;
+  margin: 70px; */
+  /* overflow-x: hidden;
+  overflow-y: auto; */
+  border-radius: 20px;
+}
+.modal-window2xx header {
+  font-weight: bold;
+}
+.modal-window2xx h1 {
+  font-size: 150%;
+  margin: 0 0 15px;
+}
+
+.modal-close2xx {
+  color: black;
+  line-height: 50px;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  /* text-decoration: none; */
+}
+.modal-close2xx:hover {
+  color: black;
+}
+
+.tabsxx {
+  position: relative;
+  display: flex;
+  height: 100%;
+  border-radius: 8px 8px 0 0;
+  /* overflow: hidden; */
+}
+
+.tabby-tabxx {
+  /* flex: 1; */
+  color: black;
+}
+
+.tabby-tabxx label {
+  display: block;
+  /* box-sizing: border-box; */
+  /* tab content must clear this */
+  height: 36, 7px;
+  width: 102px;
+
+  padding: 10px;
+  text-align: center;
+  background: white;
+  cursor: pointer;
+  border-radius: 20px 20px 0 0;
+  margin-top: 5px;
+  font-size: 15px;
+}
+
+.tabby-tabxx label:hover {
+  background: rgba(215, 64, 64, 1);
+  color: white;
+}
+.scrollxx {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  left: 0px;
+  overflow-y: auto;
+  /* this is the key */
+  max-height: 100%;
+}
+.tabby-contentxx {
+  height: 580px;
+  border-radius: 20px;
+  position: absolute;
+
+  left: 0;
+  bottom: 0;
+  right: 0;
+  /* clear the tab labels */
+  top: 40px;
+
+  padding: 20px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: rgba(215, 64, 64, 1);
+  border-radius: 0 8px 8px 8px;
+  background: white;
+  /* show/hide */
+  opacity: 0;
+  transform: scale(0.1);
+  transform-origin: top left;
+}
+
+.tabby-contentxx p {
+  font-size: 14px;
+  color: #1a1c23;
+  font-family: "Quicksand", sans-serif;
+  font-weight: 500;
+  font-size: 14.697px;
+  line-height: 18px;
+}
+
+.tabby-contentxx img {
+  float: left;
+  margin-right: 20px;
+  border-radius: 8px;
+}
+
+.tabby-tabxx [type="text"] {
+  /* width: 726px; */
+  height: 40px;
+  background: #ffffff;
+  border: 1.5px solid #686a71;
+  box-sizing: border-box;
+  border-radius: 7.34848px;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.697px;
+  line-height: 18px;
+  color: #1a1c23;
+}
+
+.tabby-tabxx .textarea {
+  width: 726px;
+  height: 100px;
+  display: absolute;
+  background: #ffffff;
+  border: 1.5px solid #686a71;
+  box-sizing: border-box;
+  border-radius: 7.34848px;
+
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14.697px;
+  line-height: 18px;
+  color: #1a1c23;
+}
+
+/* MAKE IT WORK ----- */
+
+.tabby-tabxx [type="radio"] {
+  display: none;
+}
+[type="radio"]:checked ~ label {
+  background: rgba(215, 64, 64, 1);
+  z-index: 2;
+}
+
+[type="radio"]:checked ~ label ~ .tabby-contentxx {
+  z-index: 1;
+
+  /* show/hide */
+  opacity: 1;
+  transform: scale(1);
+}
+
+.textresult {
+  position: absolute;
+  width: 427px;
+  height: 16px;
+  left: 109px;
+  top: 110px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.judulincard {
+  /* font-family: 'Quicksand', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+line-height: 16px;
+color: #393B45;
+white-space: nowrap; 
+overflow: hidden;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 2;
+-webkit-box-orient: vertical; */
+  display: -webkit-box;
+  max-width: 400px;
+  /* height: 50px; Fallback for non-webkit */
+  margin: 0 auto;
+  font-size: 15px;
+  line-height: 16px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin-bottom: 15px;
+}
+
+.userincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #393b45;
+  margin-top: -5px;
+}
+
+.tagcard {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #5d5fef;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tagcardvid {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #aa6bfa;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.namaincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #393b45;
+  margin-top: -12px;
+}
+
+.menubutton {
+  width: "150px";
+  background-color: transparent;
+  border-style: none;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.alertdelete {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #393b45;
+  margin-top: 10px;
+}
+
+.buttondeletepop {
+  /* display: flex; */
+  float: right;
+  margin-top: 8px;
+}
+
+.nobuttondelete {
+  width: 65px;
+  height: 25px;
+  background: #ffffff;
+  /* Selected Menu */
+
+  border: 1px solid #393b45;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #393b45;
+  margin-right: 8px;
+}
+
+.yesbuttondelete {
+  width: 65px;
+  height: 25px;
+  margin-left: 8px;
+
+  /* General */
+
+  background: #d74040;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border-style: none;
+  color: #ffffff;
+}
+
+.nobuttondelete:hover {
+  background: #ebeaea;
+}
+.yesbuttondelete:hover {
+  background: rgb(224, 127, 127);
+}
+
+.textresult {
+  position: absolute;
+  width: 427px;
+  height: 16px;
+  left: 109px;
+  top: 110px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.judulincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 16px;
+  color: #393b45;
+}
+
+.userincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #393b45;
+  margin-top: -5px;
+}
+
+.tagcard {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #5d5fef;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tagcardvid {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #aa6bfa;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.namaincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  color: #393b45;
+  margin-top: -12px;
+}
+
+.menubutton {
+  width: "150px";
+  background-color: transparent;
+  border-style: none;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+}
+
+.alertdelete {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #393b45;
+  margin-top: 10px;
+}
+
+.buttondeletepop {
+  /* display: flex; */
+  float: right;
+  margin-top: 8px;
+}
+
+.nobuttondelete {
+  width: 65px;
+  height: 25px;
+  background: #ffffff;
+  /* Selected Menu */
+
+  border: 1px solid #393b45;
+  box-sizing: border-box;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+
+  color: #393b45;
+  margin-right: 8px;
+}
+
+.yesbuttondelete {
+  width: 65px;
+  height: 25px;
+  margin-left: 8px;
+
+  /* General */
+
+  background: #d74040;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  border-style: none;
+  color: #ffffff;
+}
+
+.nobuttondelete:hover {
+  background: #ebeaea;
+}
+.yesbuttondelete:hover {
+  background: rgb(224, 127, 127);
+}
+
+.buttonclosexup {
+  color: black;
+  line-height: 50px;
+  font-size: 22px;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  top: 0;
+  width: 70px;
+  background-color: transparent;
+  border: white;
+}

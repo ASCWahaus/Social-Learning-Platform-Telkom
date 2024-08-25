@@ -1,0 +1,74 @@
+.css-2b097c-container {
+  width: 726px;
+}
+
+.my-className-prefix-container,
+.my-className-prefix__control {
+  width: 726px !important;
+  height: 7px !important;
+}
+
+.my-className-prefix__indicator-separator {
+  height: 23px;
+}
+.my-className-prefix__dropdown-indicator {
+  color: black;
+  margin-top: -35px;
+}
+
+.my-className-prefix__menu-list {
+  height: 100px;
+}
+.my-className-prefix__value-container {
+  position: relative;
+  bottom: 30px;
+}
+
+.my-className-prefix__control--is-focused {
+  height: 23px;
+  /* bottom: 30px; */
+}
+
+.select__control--is-focused,
+.css-1pahdxg-control {
+  min-height: 50px;
+}
+
+.my-className-prefix__placeholder {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 5px;
+  /* identical to box height */
+}
+
+.my-className-prefix__value-container {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 20px;
+  /* identical to box height */
+}
+
+.my-className-prefix__menu {
+  font-size: 35px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  margin-top: 80px;
+  /* identical to box height */
+}
+
+.css-yk16xz-control {
+  min-height: 23px;
+  max-height: 23px;
+}
+
+.css-6hp17o-MuiList-root-MuiMenu-list{
+  width: 100%;
+}

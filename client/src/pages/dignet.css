@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap");
+
+.textresult {
+  position: absolute;
+  width: 427px;
+  height: 16px;
+  left: 109px;
+  top: 110px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 16px;
+  display: flex;
+  align-items: center;
+  color: #000000;
+}
+
+.judulincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 22px;
+  color: #393b45;
+}
+
+.userincard {
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 16px;
+  color: #393b45;
+  margin-top: -5px;
+}
+
+.tagcard {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #5d5fef;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.tagcardvid {
+  float: right;
+  padding: 5px;
+  width: 60px;
+  background: #aa6bfa;
+  border-radius: 5px;
+  font-family: "Quicksand", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 16px;
+  color: #ebeaea;
+  text-align: center;
+  margin-bottom: 10px;
+}

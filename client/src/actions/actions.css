@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;700&family=Rancho&display=swap");
+
+.swal-modal {
+    font-size: 1.6rem !important;
+    font-family: "Quicksand", sans-serif;
+}
+
+.swal-button--confirm{
+    background-color: #129490;;
+}
+
+/* .swal-button{
+    background-color: #42beba;;
+
+} */
